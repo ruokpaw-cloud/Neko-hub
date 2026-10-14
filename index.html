@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ObfLab</title>
+<style>
+:root{--ink:#1d1d1f;--mute:#6e6e73;--line:#e6e6eb;--acc:#1d1d1f;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);background:#f7f8fc}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{padding:28px;display:flex;align-items:center;justify-content:center;color:var(--ink);
+font:14px/1.5 -apple-system,BlinkMacSystemFont,"SF Pro Text","Sukhumvit Set","Noto Sans Thai",system-ui,sans-serif;
+background:radial-gradient(900px 520px at 8% 0%,#dbeafe 0,transparent 62%),radial-gradient(800px 520px at 100% 8%,#fde6f2 0,transparent 62%),radial-gradient(900px 620px at 55% 100%,#dff6ec 0,transparent 62%),#f7f8fc}
+.win{width:100%;max-width:1060px;height:100%;max-height:760px;display:flex;flex-direction:column;background:#fff;border-radius:14px;overflow:hidden;
+box-shadow:0 0 0 .5px rgba(0,0,0,.2),0 28px 70px -14px rgba(30,40,90,.3),0 10px 24px -10px rgba(30,40,90,.18)}
+.bar{flex:none;height:46px;display:flex;align-items:center;padding:0 16px;background:linear-gradient(#fcfcfd,#f3f3f6);border-bottom:1px solid var(--line)}
+.dots{display:flex;gap:8px;width:64px}
+.dots i{width:12px;height:12px;border-radius:50%;display:block;box-shadow:inset 0 0 0 .5px rgba(0,0,0,.2)}
+.r{background:#ff5f57}.y{background:#febc2e}.g{background:#28c840}
+.ttl{flex:1;text-align:center;font-weight:600;font-size:13px;color:#48484a}
+.sp{width:64px}
+.body{flex:1;display:flex;min-height:0}
+.side{flex:none;width:248px;background:#f6f6f9;border-right:1px solid var(--line);padding:14px 10px;overflow:auto}
+.side h2{font-size:11px;font-weight:600;color:var(--mute);margin:2px 10px 8px}
+.fn{display:flex;gap:11px;align-items:center;width:100%;text-align:left;border:0;background:none;padding:8px 9px;border-radius:10px;font:inherit;color:inherit;cursor:pointer;transition:background .15s}
+.fn:hover{background:#ececf1}
+.fn.on{background:#e9e9ee}
+.fn>div{flex:1;min-width:0}
+.fn b{font-weight:600;display:block}
+.fn small{color:var(--mute);font-size:12px;display:block;line-height:1.35}
+.ic{flex:none;width:34px;height:34px;border-radius:9px;display:grid;place-items:center;background:#fff;color:#1d1d1f;box-shadow:inset 0 0 0 1px #dcdce2;transition:background .2s,color .2s}
+.fn.on .ic{background:#1d1d1f;color:#fff;box-shadow:none}
